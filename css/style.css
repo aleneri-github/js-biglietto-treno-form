@@ -2,5 +2,41 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  margin-top: 20px;
   background-color: #A6160A;
+}
+
+/* NOTE: tickets box */
+#tickets_box {
+  margin: 25px auto;
+  width: 70%;
+}
+  #tickets_box::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* NOTE: box interni */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  float: left;
+  width: calc(100% / 3);
+  height: 200px;
+  background-color: white;
+}
+
+.btn {
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+  background-color: red;
 }
