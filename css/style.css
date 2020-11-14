@@ -86,15 +86,19 @@ header {
   align-items: center;
 }
 
-.red_circle {
+.red_button {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
-  width: 550px;
-  border-radius: 50%;
+  width: 100px;
   background-color: #AA0F00;
+  border-radius: 10px;
+  cursor: pointer;
   color: #FFFFFF;
+}
+.red_button:hover {
+  transform: scale(1.1,1.1);  
 }
 
 #ticket {
