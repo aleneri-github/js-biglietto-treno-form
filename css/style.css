@@ -9,6 +9,12 @@ body {
   color: #FFFFFF;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 h2 {
   font-size: 40px;
   padding: 25px 0;
@@ -57,11 +63,6 @@ header {
   text-shadow: 2px 2px black;
   padding-bottom: 30px;
 }
-.info_box::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .circle {
   position: absolute;
@@ -102,11 +103,6 @@ header {
   padding: 15px;
   background-color: #FFFFFF;
 }
-#ticket::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 #info_passenger {
   float: left;
@@ -122,4 +118,11 @@ header {
   width: 70%;
   border: 2px solid black;
   background-color: lightgrey;
+}
+
+.details_ticket {
+  float: left;
+  height: 100%;
+  width: calc(100% / 4);
+  border: 1px solid black;
 }
