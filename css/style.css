@@ -112,9 +112,23 @@ header {
   height: 100%;
   width: 30%;
   text-align: center;
-  line-height: 50px;
   border: 2px solid black;
   background-color: grey;
+}
+#info_passenger_top {
+  width: 100%;
+  height: 40%;
+  padding-top: 15px;
+  border-bottom: 2px solid black;
+}
+#info_passenger_bottom {
+  width: 100%;
+  height: 60%;
+  padding-top: 15px;
+}
+#nomepasseggero {
+  padding-top: 20px;
+  text-transform: uppercase;
 }
 
 #info_ticket {
@@ -137,7 +151,7 @@ header {
   padding-top: 15px;
   height: 40%;
   width: 100%;
-  border-top: 1px solid black;
+  border-top: 2px solid black;
 }
 
 .bottom_details_ticket {
@@ -145,5 +159,5 @@ header {
   padding-bottom: 15px;
   height: 40%;
   width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
