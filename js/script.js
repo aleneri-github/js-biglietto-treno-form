@@ -51,6 +51,14 @@ function() {
   var nomeCognome = document.getElementById("nome_cognome").value;
   document.getElementById("nomepasseggero").innerHTML = nomeCognome;
 
+  var numeroCarrozza = Math.floor(Math.random() * 9) + 1;
+  document.getElementById("carrozza").innerHTML = numeroCarrozza;
+
+  var codiceCp = Math.floor(Math.random() * 10000) + 90000;
+  document.getElementById("codicecp").innerHTML = codiceCp;
+
+  document.getElementById("costobiglietto").innerHTML = prezzoArrotondato + " €";
+
 
 
 
