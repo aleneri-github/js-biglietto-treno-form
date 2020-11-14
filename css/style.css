@@ -9,6 +9,12 @@ body {
   color: #FFFFFF;
 }
 
+h2 {
+  font-size: 40px;
+  padding: 25px 0;
+  text-shadow: 3px 3px black;
+}
+
 header {
   height: 150px;
   text-align: center;
@@ -26,11 +32,6 @@ header {
   background-size: cover;
   margin: 0 auto;
   padding: 15px 15px;
-}
-#main_bottom h2 {
-  font-size: 40px;
-  padding: 25px 0;
-  text-shadow: 2px 2px black;
 }
 
 .white_box {
@@ -93,3 +94,12 @@ header {
   background-color: #AA0F00;
   color: #FFFFFF;
 }
+
+#ticket {
+  width: 70%;
+  height: 25%;
+  padding: 15px;
+  background-color: #FFFFFF;
+}
+
+#info_ticket

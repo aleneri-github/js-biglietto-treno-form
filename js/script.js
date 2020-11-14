@@ -25,12 +25,16 @@ function() {
   var prezzoArrotondato = prezzoIntero.toFixed(2);
   // VARIABILE SCONTO
   var sconto = 0;
+  // NOTE: MESSAGGIO
+  var messaggio = "";
   // SCONTO UNDER18
   if (fasciaEta == "Minorenne") {
     sconto = (prezzoIntero * 20 ) / 100;
+    messaggio = alert("Hai diritto al 20% di sconto!!");
   // SCONTO OVER65
 } else if (fasciaEta == "Over65") {
     sconto = (prezzoIntero * 40) / 100;
+    messaggio = alert("Hai diritto al 40% di sconto!!");
   }
   // PREZZO SCONTATO
   var prezzoFinale = prezzoIntero - sconto;
