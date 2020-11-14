@@ -1,8 +1,12 @@
 var bottoneGenera = document.getElementById("genera");
 bottoneGenera.addEventListener("click",
 function() {
+
   var numeroKm = document.getElementById("km").value;
   console.log(numeroKm);
+
+  var nomeCognome = document.getElementById("nome_cognome").value;
+  console.log(nomeCognome);
   }
 );
 
