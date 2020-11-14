@@ -31,16 +31,16 @@ function() {
   // SCONTO UNDER18
   if (fasciaEta == "Minorenne") {
     sconto = (prezzoIntero * 20 ) / 100;
-    messaggio = ("SCONTO UNDER 18");
+    messaggio = ("SCONTO<br>UNDER 18");
     document.getElementById("offerta").innerHTML = messaggio;
 
   // SCONTO OVER65
 } else if (fasciaEta == "Over65") {
     sconto = (prezzoIntero * 40) / 100;
-    messaggio = ("SCONTO OVER 65");
+    messaggio = ("SCONTO<br>OVER 65");
     document.getElementById("offerta").innerHTML = messaggio;
   } else {
-    messaggio = ("TARIFFA INTERA")
+    messaggio = ("TARIFFA<br>INTERA")
     document.getElementById("offerta").innerHTML = messaggio;
   }
 

@@ -125,17 +125,21 @@ header {
   float: left;
   height: 100%;
   width: calc(100% / 4);
-  border: 1px solid black;
+  padding-top: 30px;
 }
 
 .top_details_ticket {
-  height: 50%;
+  text-align: center;
+  padding-top: 15px;
+  height: 40%;
   width: 100%;
-  background-color: red;
+  border-top: 1px solid black;
 }
 
 .bottom_details_ticket {
-  height: 50%;
+  text-align: center;
+  padding-bottom: 15px;
+  height: 40%;
   width: 100%;
-  background-color: green;
+  border-bottom: 1px solid black;
 }
