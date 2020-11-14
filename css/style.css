@@ -116,9 +116,6 @@ header {
   border: 2px solid black;
   background-color: grey;
 }
-#info_passenger h4 {
-  text-decoration: underline;
-}
 
 #info_ticket {
   float: left;
