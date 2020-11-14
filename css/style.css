@@ -12,6 +12,7 @@ body {
 h2 {
   font-size: 40px;
   padding: 25px 0;
+  color: #AA0F00;
   text-shadow: 3px 3px black;
 }
 
@@ -97,9 +98,28 @@ header {
 
 #ticket {
   width: 70%;
-  height: 25%;
+  height: 35%;
   padding: 15px;
   background-color: #FFFFFF;
 }
+#ticket::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-#info_ticket
+#info_passenger {
+  float: left;
+  height: 100%;
+  width: 30%;
+  border: 2px solid black;
+  background-color: grey;
+}
+
+#info_ticket {
+  float: left;
+  height: 100%;
+  width: 70%;
+  border: 2px solid black;
+  background-color: lightgrey;
+}
