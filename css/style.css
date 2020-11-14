@@ -98,7 +98,7 @@ header {
 }
 
 #ticket {
-  width: 70%;
+  width: 80%;
   height: 35%;
   padding: 15px;
   background-color: #FFFFFF;
@@ -125,4 +125,16 @@ header {
   height: 100%;
   width: calc(100% / 4);
   border: 1px solid black;
+}
+
+.top_details_ticket {
+  height: 50%;
+  width: 100%;
+  background-color: red;
+}
+
+.bottom_details_ticket {
+  height: 50%;
+  width: 100%;
+  background-color: green;
 }
