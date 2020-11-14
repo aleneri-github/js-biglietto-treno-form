@@ -64,23 +64,13 @@ header {
   padding-bottom: 30px;
 }
 
-.circle {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate( -50%, -50%);
-  height: 110px;
-  width: 110px;
-  line-height: 110px;
-  border-radius: 50%;
-  color: #AA0F00;
-  background-color: #FFFFFF;
-}
-.circle h4 {
-  font-size: 20px;
+.form {
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 1px 1px black;
 }
 
-#discount {
+#button {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -98,7 +88,7 @@ header {
   color: #FFFFFF;
 }
 .red_button:hover {
-  transform: scale(1.1,1.1);  
+  transform: scale(1.1,1.1);
 }
 
 #ticket {
