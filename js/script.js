@@ -2,7 +2,8 @@ var bottoneGenera = document.getElementById("genera");
 bottoneGenera.addEventListener("click",
 function() {
 
-  var numeroKm = document.getElementById("km").value;
+  var numeroKm =
+  document.getElementById("km").value;
   console.log(numeroKm);
 
   var fasciaEta = document.getElementById("fascia_eta").value;
@@ -67,20 +68,31 @@ function() {
   var ilMioBiglietto = document.getElementById('ticket');
   ilMioBiglietto.classList.remove("hidden");
   ilMioBiglietto.classList.add("show");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   }
+);
+
+
+var bottoneAnnulla = document.getElementById("annulla");
+bottoneAnnulla.addEventListener("click",
+function() {
+  bottoneAnnulla = document.getElementById("ticket");
+  bottoneAnnulla.classList.remove("show");
+  bottoneAnnulla.classList.add("hidden");
+
+  var h2Biglietto = document.getElementById('h2biglietto');
+  h2Biglietto.classList.remove("show");
+  h2Biglietto.classList.add("hidden");
+
+  document.getElementById("km").value = "";
+  document.getElementById("fascia_eta").value = "";
+  document.getElementById("nome_cognome").value = "";
+
+  document.getElementById("nomepasseggero").innerHTML = "";
+  document.getElementById("offerta").innerHTML = "";
+  document.getElementById("carrozza").innerHTML = "";
+  document.getElementById("codicecp").innerHTML = "";
+  document.getElementById("costobiglietto").innerHTML = "";
+
+
+}
 );
