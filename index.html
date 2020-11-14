@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- NOTE: GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <!-- NOTE: MIO FOGLIO DI STILE -->
+    <meta charset="utf-8">
+    <!-- NOTE: google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Biglietto Treno</title>
+    <title>Biglietto treno</title>
   </head>
   <body>
-    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-    <div id="tickets_box">
-      <div class="box">
-        <h2>Nome e cognome</h2>
-        <input type="text" name="" value="">
+    <!-- NOTE: LOGO ITALO -->
+    <header>
+      <img src="https://upload.wikimedia.org/wikipedia/it/a/a4/Logo_Italo_Treno.png" alt="">
+    </header>
+    <!-- NOTE: /LOGO ITALO -->
+
+    <!-- NOTE: MAIN -->
+    <main>
+      <div id="main_bottom">
+        <h2>Calcola il prezzo del tuo biglietto</h2>
+        <div class="white_box">
+          <div class="info_box">
+            <h3>Inserisci la distanza che vuoi percorrere</h3>
+            <div class="circle">
+              <h4 id="km"></h4>
+            </div>
+          </div>
+          <div class="info_box">
+            <h3>Inserisci la tua età:</h3>
+            <div class="circle">
+              <h4 id="anni"></h4>
+            </div>
+          </div>
+          <div class="info_box">
+            <h3>Totale:</h3>
+            <div class="circle">
+              <h4 id="totale"></h4>
+            </div>
+        </div>
+        <div id="discount" class="info_box">
+          <div class="red_circle">
+            <span>
+              <strong>OVER 65<br>SCONTO 40%</strong>
+            </span>
+          </div>
+          <div class="red_circle">
+            <span>
+              <strong>UNDER 18<br>SCONTO 20%</strong>
+            </span>
+          </div>
+        </div>
       </div>
-      <div class="box">
-        <h2>Km da percorrere</h2>
-        <input type="number">
-        <div class="btn"></div>
-        <div class="btn"></div>
-
-
-      </div>
-      <div class="box">
-        <h2>Fascia d'età</h2>
-        <select class="" name="">
-          <option value="">Minorenne</option>
-          <option value="">Maggiorenne</option>
-          <option value="">Over65</option>
-        </select>
-      </div>
-    </div>
-
-
-
+    </main>
+    <!-- NOTE: /MAIN -->
 
     <script src="js/script.js" charset="utf-8"></script>
   </body>

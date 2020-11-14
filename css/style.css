@@ -1,42 +1,98 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  text-align: center;
-  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  left: 0;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 body {
-  margin-top: 20px;
-  background-color: #A6160A;
+  color: #FFFFFF;
 }
 
-/* NOTE: tickets box */
-#tickets_box {
-  margin: 25px auto;
-  width: 70%;
+header {
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  background-color: #FFFFFF;
 }
-  #tickets_box::after {
+
+#main_top {
+  height: 50px;
+}
+
+#main_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 700px;
+  background-image: url("https://www.italotreno.it/-/media/Images/images_responsive/nuovo-motore/torino/background-torino.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  padding: 30px 30px;
+}
+#main_bottom h2 {
+  font-size: 40px;
+  padding: 50px 0;
+  text-shadow: 2px 2px black;
+}
+
+.white_box {
+  height: 60%;
+  width: 70%;
+  border: 2px solid white;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.info_box {
+  position: relative;
+  float: left;
+  height: 50%;
+  width: calc(100% / 2);
+  border: 2px solid white;
+  padding: 10px;
+  text-align: center;
+}
+.info_box h3 {
+  font-size: 22px;
+  text-shadow: 2px 2px black;
+}
+.info_box::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* NOTE: box interni */
-.box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  float: left;
-  width: calc(100% / 3);
-  height: 200px;
-  background-color: white;
+.circle {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  height: 110px;
+  width: 110px;
+  line-height: 110px;
+  border-radius: 50%;
+  color: #AA0F00;
+  background-color: #FFFFFF;
+}
+.circle h4 {
+  font-size: 20px;
 }
 
-.btn {
-  display: inline-block;
-  height: 50px;
-  width: 100px;
-  background-color: red;
+#discount {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.red_circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #AA0F00;
+  color: #FFFFFF;
 }
