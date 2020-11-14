@@ -5,6 +5,9 @@ function() {
   var numeroKm = document.getElementById("km").value;
   console.log(numeroKm);
 
+  var fasciaEta = document.getElementById("fascia_eta").value;
+  console.log(fasciaEta);
+
   var nomeCognome = document.getElementById("nome_cognome").value;
   console.log(nomeCognome);
   }
