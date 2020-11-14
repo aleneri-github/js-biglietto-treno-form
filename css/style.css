@@ -104,13 +104,26 @@ header {
   background-color: #FFFFFF;
   color: black;
 }
+.hidden {
+  opacity: 0;
+  transition: 0.5s;
+}
+.show {
+  opacity: 1;
+  transition: 0.5s;
+}
 
 #info_passenger {
   float: left;
   height: 100%;
   width: 30%;
+  text-align: center;
+  line-height: 50px;
   border: 2px solid black;
   background-color: grey;
+}
+#info_passenger h4 {
+  text-decoration: underline;
 }
 
 #info_ticket {

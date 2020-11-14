@@ -59,6 +59,16 @@ function() {
 
   document.getElementById("costobiglietto").innerHTML = prezzoArrotondato + " €";
 
+  var h2Biglietto = document.getElementById('h2biglietto');
+  h2Biglietto.classList.remove("hidden");
+  h2Biglietto.classList.add("show");
+
+
+  var ilMioBiglietto = document.getElementById('ticket');
+  ilMioBiglietto.classList.remove("hidden");
+  ilMioBiglietto.classList.add("show");
+
+
 
 
 
