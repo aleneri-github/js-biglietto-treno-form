@@ -18,33 +18,34 @@
 
     <!-- NOTE: MAIN -->
     <main>
-      <div id="main_bottom">
-        <h2>Calcola il prezzo del tuo biglietto</h2>
+      <!-- NOTE: TITOLO "CALCOLA PREZZO BIGLIETTO" -->
+      <h2>Calcola il prezzo del tuo biglietto</h2>
 
-        <!-- NOTE: BOX NOME,KM,ETA',PULSANTI -->
-        <div class="white_box clearfix">
-          <!-- NOTE: NOME E COGNOME -->
-          <div class="info_box">
-            <h3>Nome e cognome</h3>
-            <input id="nome_cognome" class="form" type="text" name="nome" placeholder="Nome e cognome">
-          </div>
-          <!-- NOTE: /NOME E COGNOME -->
+      <!-- NOTE: BOX NOME,KM,ETA',PULSANTI -->
+      <div class="form_box clearfix">
 
-          <!-- NOTE: FASCIA ETA' -->
-          <div class="info_box">
-            <h3>Seleziona la tua fascia d'età</h3>
-            <select id="fascia_eta" class="form" name="eta">
-              <option value="Minorenne">Minorenne</option>
-              <option value="Maggiorenne">Maggiorenne</option>
-              <option value="Over65">Over65</option>
-            </select>
-          </div>
-          <!-- NOTE: /FASCIA ETA' -->
+        <!-- NOTE: NOME E COGNOME -->
+        <div class="info_box">
+          <h3>Nome e cognome</h3>
+          <input id="nome_cognome" class="form" type="text" name="nome" placeholder="Nome e cognome">
+        </div>
+        <!-- NOTE: /NOME E COGNOME -->
 
-          <!-- NOTE: KM DA PERCORRERE -->
-          <div class="info_box">
-            <h3>Km da percorrere</h3>
-            <input id="km" class="form" type="number" name="km" placeholder="Km da percorrere">
+        <!-- NOTE: FASCIA ETA' -->
+        <div class="info_box">
+          <h3>Seleziona la tua fascia d'età</h3>
+          <select id="fascia_eta" class="form" name="eta">
+            <option value="Minorenne">Minorenne</option>
+            <option value="Maggiorenne">Maggiorenne</option>
+            <option value="Over65">Over65</option>
+          </select>
+        </div>
+        <!-- NOTE: /FASCIA ETA' -->
+
+        <!-- NOTE: KM DA PERCORRERE -->
+        <div class="info_box">
+          <h3>Km da percorrere</h3>
+          <input id="km" class="form" type="number" name="km" placeholder="Km da percorrere">
         </div>
         <!-- NOTE: /KM DA PERCORRERE -->
 
@@ -62,10 +63,11 @@
           </div>
         </div>
         <!-- NOTE: /PULSANTI -->
+
       </div>
       <!-- NOTE: /BOX NOME,KM,ETA',PULSANTI  -->
 
-
+      <!-- NOTE: TITOLO "IL TUO BIGLIETTO" -->
       <h2 id="h2biglietto" class="hidden">Il tuo biglietto</h2>
 
       <!-- NOTE: BIGLIETTO -->
@@ -139,14 +141,16 @@
             </div>
           </div>
           <!-- NOTE: /COSTO BIGLIETTO -->
+
         </div>
         <!-- NOTE: /INFO TICKET -->
+        
       </div>
       <!-- NOTE: /BIGLIETTO -->
 
     </main>
     <!-- NOTE: /MAIN -->
-    
+
     <!-- NOTE: link mio javascript -->
     <script src="js/script.js" charset="utf-8"></script>
   </body>

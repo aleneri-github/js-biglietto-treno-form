@@ -29,7 +29,7 @@ header {
   background-color: #FFFFFF;
 }
 
-#main_bottom {
+main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -41,7 +41,8 @@ header {
   padding: 15px 15px;
 }
 
-.white_box {
+/* NOTE: FORM */
+.form_box {
   height: 40%;
   width: 70%;
   border: 2px solid white;
@@ -49,6 +50,8 @@ header {
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.5);
 }
+
+/* NOTE: BOX SINGOLO DEL FORM */
 .info_box {
   position: relative;
   float: left;
@@ -64,6 +67,7 @@ header {
   padding-bottom: 20px;
 }
 
+/* NOTE: CAMPI INPUT */
 .form {
   width: 200px;
   height: 25px;
@@ -72,12 +76,14 @@ header {
   box-shadow: 1px 1px black;
 }
 
+/* NOTE: BOX CON PULSANTI */
 #button {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+/* NOTE: PULSANTI GENERA E ANNULLA */
 .red_button {
   display: flex;
   justify-content: center;
@@ -95,6 +101,7 @@ header {
   box-shadow: 2px 2px 2px black;
 }
 
+/* NOTE: TICKET */
 #ticket {
   width: 80%;
   height: 35%;
@@ -102,6 +109,7 @@ header {
   background-color: #FFFFFF;
   color: black;
 }
+/* NOTE: CLASSI HIDDEN E SHOW PER TICKET */
 .hidden {
   opacity: 0;
   transition: 0.5s;
@@ -110,7 +118,9 @@ header {
   opacity: 1;
   transition: 0.5s;
 }
+/* NOTE: /CLASSI HIDDEN E SHOW PER TICKET */
 
+/* NOTE: SEZIONE TICKET DETTAGLI PASSEGGERO */
 #info_passenger {
   float: left;
   height: 100%;
@@ -140,7 +150,6 @@ header {
   height: 100%;
   border: 2px solid #AA0F00;
 }
-
 #info_passenger_bottom {
   width: 100%;
   height: 60%;
@@ -164,7 +173,9 @@ header {
 #info_passenger_bottom_right img {
   width: 100%;
 }
+/* NOTE: /SEZIONE TICKET DETTAGLI PASSEGGERO */
 
+/* NOTE: SEZIONE INFO TICKET (Comprende offerta, carrozza, codice cp e costo biglietto) */
 #info_ticket {
   float: left;
   height: 100%;
@@ -173,6 +184,7 @@ header {
   background-color: lightgrey;
 }
 
+/* NOTE: SEZIONE SINGOLA INFO TICKET */
 .details_ticket {
   float: left;
   height: 100%;
@@ -181,6 +193,7 @@ header {
   background-color: grey;
 }
 
+/* NOTE: SEZIONE SINGOLA INFO TICKET TOP */
 .top_details_ticket {
   text-align: center;
   padding-top: 15px;
@@ -190,6 +203,7 @@ header {
   background-color: lightgrey;
 }
 
+/* NOTE: SEZIONE SINGOLA INFO TICKET BOTTOM */
 .bottom_details_ticket {
   text-align: center;
   padding-bottom: 15px;
