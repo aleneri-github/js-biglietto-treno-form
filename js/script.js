@@ -23,9 +23,6 @@ function() {
   var prezzoIntero = numeroKm * prezzoAlKm;
   console.log(prezzoIntero);
 
-  // NOTE: ARROTONDAMENTO PREZZO
-  var prezzoArrotondato = prezzoIntero.toFixed(2);
-
   // VARIABILE SCONTO
   var sconto = 0;
 
@@ -50,7 +47,7 @@ function() {
 
   // PREZZO SCONTATO
   var prezzoFinale = prezzoIntero - sconto;
-  console.log(prezzoFinale);
+  prezzoFinale = prezzoFinale.toFixed(2);
 
   // NOTE: STAMPA SU TICKET DI NOME E COGNOME
   var nomeCognome = document.getElementById("nome_cognome").value;
@@ -65,7 +62,7 @@ function() {
   document.getElementById("codicecp").innerHTML = codiceCp;
 
   // NOTE: STAMPA DU TICKET COSTO BIGLIETTO
-  document.getElementById("costobiglietto").innerHTML = prezzoArrotondato + " €";
+  document.getElementById("costobiglietto").innerHTML = prezzoFinale + " €";
 
   // NOTE: TITOLO "IL TUO BIGLIETTO"
   var h2Biglietto = document.getElementById('h2biglietto');
