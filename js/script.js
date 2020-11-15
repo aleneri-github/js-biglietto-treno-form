@@ -48,6 +48,7 @@ function() {
   // PREZZO SCONTATO
   var prezzoFinale = prezzoIntero - sconto;
   prezzoFinale = prezzoFinale.toFixed(2);
+  console.log(prezzoFinale);
 
   // NOTE: STAMPA SU TICKET DI NOME E COGNOME
   var nomeCognome = document.getElementById("nome_cognome").value;
