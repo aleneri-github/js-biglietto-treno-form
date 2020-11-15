@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <!-- NOTE: google font -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <!-- NOTE: mio foglio di stile -->
     <link rel="stylesheet" href="css/style.css">
     <title>Biglietto treno</title>
   </head>
@@ -19,11 +20,17 @@
     <main>
       <div id="main_bottom">
         <h2>Calcola il prezzo del tuo biglietto</h2>
+
+        <!-- NOTE: BOX NOME,KM,ETA',PULSANTI -->
         <div class="white_box clearfix">
+          <!-- NOTE: NOME E COGNOME -->
           <div class="info_box">
             <h3>Nome e cognome</h3>
             <input id="nome_cognome" class="form" type="text" name="nome" placeholder="Nome e cognome">
           </div>
+          <!-- NOTE: /NOME E COGNOME -->
+
+          <!-- NOTE: FASCIA ETA' -->
           <div class="info_box">
             <h3>Seleziona la tua fascia d'età</h3>
             <select id="fascia_eta" class="form" name="eta">
@@ -32,10 +39,16 @@
               <option value="Over65">Over65</option>
             </select>
           </div>
+          <!-- NOTE: /FASCIA ETA' -->
+
+          <!-- NOTE: KM DA PERCORRERE -->
           <div class="info_box">
             <h3>Km da percorrere</h3>
             <input id="km" class="form" type="number" name="km" placeholder="Km da percorrere">
         </div>
+        <!-- NOTE: /KM DA PERCORRERE -->
+
+        <!-- NOTE: PULSANTI -->
         <div id="button" class="info_box">
           <div>
             <span>
@@ -48,9 +61,17 @@
             </span>
           </div>
         </div>
+        <!-- NOTE: /PULSANTI -->
       </div>
+      <!-- NOTE: /BOX NOME,KM,ETA',PULSANTI  -->
+
+
       <h2 id="h2biglietto" class="hidden">Il tuo biglietto</h2>
+
+      <!-- NOTE: BIGLIETTO -->
       <div id="ticket" class="clearfix hidden">
+
+        <!-- NOTE: DETTAGLI PASSEGGERO -->
         <div id="info_passenger">
           <div id="info_passenger_top" class="clearfix">
             <div id="info_passenger_top_left">
@@ -70,7 +91,12 @@
             </div>
           </div>
         </div>
+        <!-- NOTE: /DETTAGLI PASSEGERO -->
+
+        <!-- NOTE: INFO TICKET -->
         <div id="info_ticket" class="clearfix">
+
+          <!-- NOTE: TIPO DI OFFERTA -->
           <div class="details_ticket">
             <div class="top_details_ticket">
               <h3>Offerta</h3>
@@ -79,6 +105,9 @@
               <h4 id="offerta"></h4>
             </div>
           </div>
+          <!-- NOTE: /TIPO DI OFFERTA -->
+
+          <!-- NOTE: NUMERO CARROZZA -->
           <div class="details_ticket">
             <div class="top_details_ticket">
               <h3>Carrozza</h3>
@@ -87,6 +116,9 @@
               <h4 id="carrozza"></h4>
             </div>
           </div>
+          <!-- NOTE: /NUMERO CARROZZA -->
+
+          <!-- NOTE: CODICE CP -->
           <div class="details_ticket">
             <div class="top_details_ticket">
               <h3>Codice CP</h3>
@@ -95,6 +127,9 @@
               <h4 id="codicecp"></h4>
             </div>
           </div>
+          <!-- NOTE: /CODICE CP -->
+
+          <!-- NOTE: COSTO BIGLIETTO -->
           <div class="details_ticket">
             <div class="top_details_ticket">
               <h3>Costo biglietto</h3>
@@ -103,11 +138,16 @@
               <h4 id="costobiglietto"></h4>
             </div>
           </div>
+          <!-- NOTE: /COSTO BIGLIETTO -->
         </div>
+        <!-- NOTE: /INFO TICKET -->
       </div>
+      <!-- NOTE: /BIGLIETTO -->
+
     </main>
     <!-- NOTE: /MAIN -->
-
+    
+    <!-- NOTE: link mio javascript -->
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
